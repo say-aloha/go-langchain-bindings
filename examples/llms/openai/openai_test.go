@@ -43,3 +43,12 @@ func TestBatchCompletion(t *testing.T) {
 		log.Fatal(err)
 	}
 	completion, err := llm.Generate(context.Background(), []string{
+		"Question, what kind of bear is best?",
+		"How tall is mount everest?",
+	}, []string{})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(completion)
+}

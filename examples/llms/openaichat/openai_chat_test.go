@@ -23,3 +23,23 @@ func TestFirstMessageChat(t *testing.T) {
 
 	fmt.Println(completion)
 }
+
+func TestMultiMessageChat(t *testing.T) {
+	llm, err := openaichat.New(openaichat.OpenAIChatInput{
+		PrefixMessages: []openaichat.ChatMessage{
+			{
+				Content: "Mount Everest is the tallest mountain in the world.",
+				Role:    openaichat.ChatMessageRoleEnumAssistant,
+			},
+		},
+	})
+	if err != nil {
+		log.Fatal(err)
+	}
+	completion, err := llm.Call(context.Background(), "How tall is it?", []string{})
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(completion)
+}

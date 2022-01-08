@@ -1,1 +1,1 @@
-module github.com/spea
+module github.com/speakeasy-api/langchain-

@@ -1,3 +1,5 @@
 module github.com/speakeasy-api/langchain-go
 
-go 1.2
+go 1.20
+
+require 

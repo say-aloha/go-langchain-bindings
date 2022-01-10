@@ -1,1 +1,3 @@
-module github.com/speakeasy-api/langchain-
+module github.com/speakeasy-api/langchain-go
+
+go 1.2

@@ -1,3 +1,4 @@
 github.com/cenkalti/backoff/v4 v4.2.0 h1:HN5dHm3WBOgndBH6E8V0q2jIYIR3s9yglV8k/+MN3u4=
 github.com/cenkalti/backoff/v4 v4.2.0/go.mod h1:Y3VNntkOUPxTVeUxJ/G5vcM//AlwfmyYozVcomhLiZE=
-github.com/speakeasy-sdks/openai-go-sdk v1.11.0 h1:YVCv+4eV3Et51dkf59V4IWlqr0yvbAiHrcHeLMlQ
+github.com/speakeasy-sdks/openai-go-sdk v1.11.0 h1:YVCv+4eV3Et51dkf59V4IWlqr0yvbAiHrcHeLMlQ8E8=
+github.com/s

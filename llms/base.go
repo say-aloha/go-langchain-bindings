@@ -1,3 +1,5 @@
 package llms
 
-import 
+import "context"
+
+type LLM interfa

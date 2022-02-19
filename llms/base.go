@@ -2,4 +2,4 @@ package llms
 
 import "context"
 
-type LLM interfa
+type LLM interface {

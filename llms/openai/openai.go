@@ -1,3 +1,4 @@
 package openai
 
-impor
+import (
+	"context"

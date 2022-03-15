@@ -3,4 +3,4 @@ package openai
 import (
 	"context"
 	"errors"
-	llms_shared "github.com/speakeasy-api/langcha
+	llms_shared "github.com/speakeasy-api/langchain-go/llms/share

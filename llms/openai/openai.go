@@ -5,4 +5,4 @@ import (
 	"errors"
 	llms_shared "github.com/speakeasy-api/langchain-go/llms/shared"
 
-	openai_shared "github.
+	openai_shared "github.com/speakeas

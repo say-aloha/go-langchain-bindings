@@ -6,4 +6,5 @@ import (
 	llms_shared "github.com/speakeasy-api/langchain-go/llms/shared"
 
 	openai_shared "github.com/speakeasy-api/langchain-go/llms/shared/openai"
-	gpt "github.com/speakeasy-sdks/openai-go-sdk
+	gpt "github.com/speakeasy-sdks/openai-go-sdk"
+	"github.com/speak

@@ -9,4 +9,6 @@ import (
 	gpt "github.com/speakeasy-sdks/openai-go-sdk"
 	"github.com/speakeasy-sdks/openai-go-sdk/pkg/models/shared"
 	"math"
-	"ne
+	"net"
+	"net/http"
+	"os"

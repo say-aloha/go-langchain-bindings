@@ -19,4 +19,5 @@ import (
 )
 
 // Default Params for Open AI model
-co
+const (
+	tem

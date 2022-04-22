@@ -20,4 +20,4 @@ import (
 
 // Default Params for Open AI model
 const (
-	tem
+	temperature      floa

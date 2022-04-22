@@ -18,4 +18,5 @@ import (
 	"github.com/speakeasy-api/langchain-go/llms"
 )
 
-// Default Param
+// Default Params for Open AI model
+co

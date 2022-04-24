@@ -21,4 +21,4 @@ import (
 // Default Params for Open AI model
 const (
 	temperature      float64 = 0.7
-	maxTo
+	maxTokens      

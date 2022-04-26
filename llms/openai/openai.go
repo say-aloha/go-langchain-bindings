@@ -23,4 +23,4 @@ const (
 	temperature      float64 = 0.7
 	maxTokens        int64   = 256
 	topP             float64 = 1
-	fre
+	frequencyPenalty float

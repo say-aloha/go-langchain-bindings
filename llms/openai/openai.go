@@ -24,4 +24,5 @@ const (
 	maxTokens        int64   = 256
 	topP             float64 = 1
 	frequencyPenalty float64 = 0
-	presenceP
+	presencePenalty  float64 = 0
+	n

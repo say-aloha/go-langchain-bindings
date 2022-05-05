@@ -25,4 +25,4 @@ const (
 	topP             float64 = 1
 	frequencyPenalty float64 = 0
 	presencePenalty  float64 = 0
-	n
+	n              

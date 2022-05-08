@@ -26,4 +26,4 @@ const (
 	frequencyPenalty float64 = 0
 	presencePenalty  float64 = 0
 	n                int64   = 1
-	best
+	bestOf           i

@@ -27,4 +27,4 @@ const (
 	presencePenalty  float64 = 0
 	n                int64   = 1
 	bestOf           int64   = 1
-	modelName   
+	modelName        string  = "text

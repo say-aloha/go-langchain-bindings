@@ -28,4 +28,5 @@ const (
 	n                int64   = 1
 	bestOf           int64   = 1
 	modelName        string  = "text-davinci-003"
-	batchSize        in
+	batchSize        int64   = 20
+	maxRetries

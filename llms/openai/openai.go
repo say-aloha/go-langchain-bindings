@@ -28,4 +28,4 @@ const (
 	n                int64   = 1
 	bestOf           int64   = 1
 	modelName        string  = "text-davinci-003"
-	ba
+	batchSize        in

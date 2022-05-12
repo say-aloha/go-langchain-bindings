@@ -31,3 +31,5 @@ const (
 	batchSize        int64   = 20
 	maxRetries       int     = 3
 )
+
+type OpenAI s

@@ -32,4 +32,5 @@ const (
 	maxRetries       int     = 3
 )
 
-type OpenAI s
+type OpenAI struct {
+	te

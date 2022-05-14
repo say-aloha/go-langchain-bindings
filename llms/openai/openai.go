@@ -33,4 +33,4 @@ const (
 )
 
 type OpenAI struct {
-	te
+	temperature      fl

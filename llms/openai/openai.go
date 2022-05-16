@@ -33,4 +33,5 @@ const (
 )
 
 type OpenAI struct {
-	temperature      fl
+	temperature      float64
+	maxTokens     

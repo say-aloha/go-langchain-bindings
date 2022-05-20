@@ -36,4 +36,4 @@ type OpenAI struct {
 	temperature      float64
 	maxTokens        int64
 	topP             float64
-	
+	frequencyPenalty 

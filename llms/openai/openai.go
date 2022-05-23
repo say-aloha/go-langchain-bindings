@@ -42,4 +42,4 @@ type OpenAI struct {
 	bestOf           int64
 	logitBias        map[string]interface{}
 	streaming        bool // Streaming Unsupported Right Now
-	
+	modelName        str

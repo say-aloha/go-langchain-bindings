@@ -41,4 +41,4 @@ type OpenAI struct {
 	n                int64
 	bestOf           int64
 	logitBias        map[string]interface{}
-	str
+	streaming        bool /

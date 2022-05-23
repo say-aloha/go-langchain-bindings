@@ -37,4 +37,6 @@ type OpenAI struct {
 	maxTokens        int64
 	topP             float64
 	frequencyPenalty float64
-	presencePenalty  float
+	presencePenalty  float64
+	n                int64
+	

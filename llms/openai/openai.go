@@ -40,4 +40,5 @@ type OpenAI struct {
 	presencePenalty  float64
 	n                int64
 	bestOf           int64
-	logitBias        map[string]i
+	logitBias        map[string]interface{}
+	str

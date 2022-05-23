@@ -39,4 +39,5 @@ type OpenAI struct {
 	frequencyPenalty float64
 	presencePenalty  float64
 	n                int64
-	bestOf           int
+	bestOf           int64
+	logitBias

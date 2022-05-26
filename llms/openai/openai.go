@@ -43,4 +43,5 @@ type OpenAI struct {
 	logitBias        map[string]interface{}
 	streaming        bool // Streaming Unsupported Right Now
 	modelName        string
-	modelKwargs      map[string]int
+	modelKwargs      map[string]interface{}
+	maxRet

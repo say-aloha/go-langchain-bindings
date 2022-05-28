@@ -49,3 +49,6 @@ type OpenAI struct {
 	stop             []string
 	timeout          *time.Duration
 	client           *gpt.Gpt
+}
+
+func New(args 

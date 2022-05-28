@@ -47,3 +47,4 @@ type OpenAI struct {
 	maxRetries       int
 	batchSize        int64
 	stop             []string
+	timeout  

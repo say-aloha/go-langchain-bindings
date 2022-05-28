@@ -44,4 +44,5 @@ type OpenAI struct {
 	streaming        bool // Streaming Unsupported Right Now
 	modelName        string
 	modelKwargs      map[string]interface{}
-	maxRet
+	maxRetries       int
+	batc

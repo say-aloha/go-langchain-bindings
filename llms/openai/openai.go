@@ -45,4 +45,5 @@ type OpenAI struct {
 	modelName        string
 	modelKwargs      map[string]interface{}
 	maxRetries       int
-	batchSize        i
+	batchSize        int64
+	stop      

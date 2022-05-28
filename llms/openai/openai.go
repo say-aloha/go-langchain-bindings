@@ -48,4 +48,4 @@ type OpenAI struct {
 	batchSize        int64
 	stop             []string
 	timeout          *time.Duration
-	clie
+	client           *gpt.Gpt

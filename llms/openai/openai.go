@@ -51,4 +51,5 @@ type OpenAI struct {
 	client           *gpt.Gpt
 }
 
-func New(args ...OpenAIInput) (*Op
+func New(args ...OpenAIInput) (*OpenAI, error) {
+	

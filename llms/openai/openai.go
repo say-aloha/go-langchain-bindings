@@ -52,4 +52,5 @@ type OpenAI struct {
 }
 
 func New(args ...OpenAIInput) (*OpenAI, error) {
-	
+	if len(args) > 1 {
+		retur

@@ -53,4 +53,7 @@ type OpenAI struct {
 
 func New(args ...OpenAIInput) (*OpenAI, error) {
 	if len(args) > 1 {
-		return nil, errors.New("more than one config argument not
+		return nil, errors.New("more than one config argument not supported")
+	}
+
+	inp

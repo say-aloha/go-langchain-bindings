@@ -56,4 +56,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		return nil, errors.New("more than one config argument not supported")
 	}
 
-	inp
+	input := Op

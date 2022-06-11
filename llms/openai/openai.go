@@ -57,4 +57,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	input := OpenAIInput{}
-	i
+	if len(args) > 0 

@@ -58,4 +58,7 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 
 	input := OpenAIInput{}
 	if len(args) > 0 {
-		input = args[0
+		input = args[0]
+	}
+
+	openai :

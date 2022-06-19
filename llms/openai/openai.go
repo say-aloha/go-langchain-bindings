@@ -63,4 +63,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 
 	openai := OpenAI{
 		temperature:      temperature,
-	
+		maxTokens:        

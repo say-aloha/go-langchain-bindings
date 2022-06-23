@@ -65,4 +65,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		temperature:      temperature,
 		maxTokens:        maxTokens,
 		topP:             topP,
-		freq
+		frequencyPenalty: fre

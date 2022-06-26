@@ -69,4 +69,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		presencePenalty:  presencePenalty,
 		n:                n,
 		bestOf:           bestOf,
-		logitBias:        in
+		logitBias:        input.LogitBias,

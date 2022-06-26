@@ -70,3 +70,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		n:                n,
 		bestOf:           bestOf,
 		logitBias:        input.LogitBias,
+		streaming:       

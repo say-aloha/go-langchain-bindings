@@ -66,4 +66,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		maxTokens:        maxTokens,
 		topP:             topP,
 		frequencyPenalty: frequencyPenalty,
-		presencePenalty: 
+		presencePenalty:  presencePenalty,
+		n

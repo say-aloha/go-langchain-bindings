@@ -68,4 +68,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		frequencyPenalty: frequencyPenalty,
 		presencePenalty:  presencePenalty,
 		n:                n,
-		bestOf:   
+		bestOf:           bestOf,

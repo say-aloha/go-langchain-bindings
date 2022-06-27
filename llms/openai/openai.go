@@ -72,4 +72,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		logitBias:        input.LogitBias,
 		streaming:        input.Streaming,
 		modelName:        modelName,
-		modelKwar
+		modelKwargs:      input.ModelKwargs,
+	

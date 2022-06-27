@@ -71,4 +71,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		bestOf:           bestOf,
 		logitBias:        input.LogitBias,
 		streaming:        input.Streaming,
-		mo
+		modelName:    

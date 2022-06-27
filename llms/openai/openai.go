@@ -73,4 +73,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		streaming:        input.Streaming,
 		modelName:        modelName,
 		modelKwargs:      input.ModelKwargs,
-	
+		batchSize:     

@@ -75,4 +75,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		modelKwargs:      input.ModelKwargs,
 		batchSize:        batchSize,
 		stop:             input.Stop,
-		timeout:     
+		timeout:          input.Timeout,
+		

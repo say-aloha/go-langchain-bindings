@@ -79,4 +79,6 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		maxRetries:       maxRetries,
 	}
 
-	apiKey := os.Getenv("OPENAI_
+	apiKey := os.Getenv("OPENAI_API_KEY")
+
+	if inpu

@@ -76,4 +76,7 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		batchSize:        batchSize,
 		stop:             input.Stop,
 		timeout:          input.Timeout,
-		maxRetries:       maxRetri
+		maxRetries:       maxRetries,
+	}
+
+	apiKey := o

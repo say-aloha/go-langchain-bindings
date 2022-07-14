@@ -81,4 +81,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 
 	apiKey := os.Getenv("OPENAI_API_KEY")
 
-	if input.OpenAIApiKey != nil
+	if input.OpenAIApiKey != nil {
+		apiKey = *input

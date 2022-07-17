@@ -85,4 +85,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		apiKey = *input.OpenAIApiKey
 	}
 
-	i
+	if apiKey 

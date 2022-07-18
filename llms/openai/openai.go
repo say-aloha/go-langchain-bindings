@@ -86,4 +86,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if apiKey == "" {
-		return nil, errors.New("OpenAI
+		return nil, errors.New("OpenAI API key not fo

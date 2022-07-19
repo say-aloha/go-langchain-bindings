@@ -89,4 +89,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		return nil, errors.New("OpenAI API key not found")
 	}
 
-	if input.Mo
+	if input.ModelName != nil {

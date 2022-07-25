@@ -90,4 +90,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.ModelName != nil {
-		openai.modelName
+		openai.modelName = *input.Mo

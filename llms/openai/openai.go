@@ -93,4 +93,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		openai.modelName = *input.ModelName
 	}
 
-	if strings.HasPrefi
+	if strings.HasPrefix(openai.modelN

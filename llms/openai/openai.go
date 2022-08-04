@@ -98,4 +98,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.Temperature != nil {
-		openai.tempe
+		openai.temperature = *input

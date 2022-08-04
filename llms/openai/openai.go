@@ -97,4 +97,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		return nil, errors.New("use OpenAIChat for these models")
 	}
 
-	if input.Temperature 
+	if input.Temperature != nil {
+		openai.tempe

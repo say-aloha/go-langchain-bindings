@@ -94,4 +94,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if strings.HasPrefix(openai.modelName, "gpt-3.5-turbo") || strings.HasPrefix(openai.modelName, "gpt-4") {
-		return nil, errors.New("use O
+		return nil, errors.New("use OpenAIChat for

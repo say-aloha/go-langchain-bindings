@@ -100,3 +100,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	if input.Temperature != nil {
 		openai.temperature = *input.Temperature
 	}
+
+	if input.MaxTokens !

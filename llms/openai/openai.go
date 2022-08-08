@@ -105,4 +105,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		openai.maxTokens = *input.MaxTokens
 	}
 
-	if input.To
+	if input.TopP != nil {
+		

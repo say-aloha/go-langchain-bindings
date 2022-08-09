@@ -106,4 +106,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.TopP != nil {
-		
+		openai.topP = *inpu

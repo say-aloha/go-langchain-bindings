@@ -109,4 +109,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		openai.topP = *input.TopP
 	}
 
-	if input.Fr
+	if input.FrequencyPenalty != 

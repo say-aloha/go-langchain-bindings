@@ -110,4 +110,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.FrequencyPenalty != nil {
-		openai.fr
+		openai.frequencyPenalty = *input.Frequ

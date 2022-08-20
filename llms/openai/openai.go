@@ -114,4 +114,7 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.PresencePenalty != nil {
-		openai.presencePenalty = *input.Presenc
+		openai.presencePenalty = *input.PresencePenalty
+	}
+
+	if i

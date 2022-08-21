@@ -118,3 +118,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.N != nil {
+		openai.n = *input

@@ -122,4 +122,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.BestOf != nil {
-		openai.bestOf 
+		openai.bestOf = *input.BestOf
+	}

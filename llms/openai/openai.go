@@ -125,4 +125,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		openai.bestOf = *input.BestOf
 	}
 
-	if input.BatchSize != n
+	if input.BatchSize != nil {
+		openai.batchSize

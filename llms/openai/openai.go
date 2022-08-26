@@ -126,4 +126,7 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.BatchSize != nil {
-		openai.batchSize = *input.Batc
+		openai.batchSize = *input.BatchSize
+	}
+
+	if input.M

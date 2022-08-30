@@ -129,4 +129,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		openai.batchSize = *input.BatchSize
 	}
 
-	if input.M
+	if input.MaxRetries != nil {
+		openai.maxR

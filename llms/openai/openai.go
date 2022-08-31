@@ -130,4 +130,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.MaxRetries != nil {
-		openai.maxR
+		openai.maxRetries = *input.Ma

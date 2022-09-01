@@ -133,4 +133,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		openai.maxRetries = *input.MaxRetries
 	}
 
-	httpCl
+	httpClient := openai_

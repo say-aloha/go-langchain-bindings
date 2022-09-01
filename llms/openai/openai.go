@@ -130,4 +130,7 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	}
 
 	if input.MaxRetries != nil {
-		openai.maxRetries = *input.Ma
+		openai.maxRetries = *input.MaxRetries
+	}
+
+	httpCl

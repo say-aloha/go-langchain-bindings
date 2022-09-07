@@ -135,4 +135,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 
 	httpClient := openai_shared.OpenAIAuthenticatedClient(apiKey)
 
-	if op
+	if openai.timeou

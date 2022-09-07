@@ -136,4 +136,7 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	httpClient := openai_shared.OpenAIAuthenticatedClient(apiKey)
 
 	if openai.timeout != nil {
-		httpClient.Timeout =
+		httpClient.Timeout = *openai.timeout
+	}
+
+	c

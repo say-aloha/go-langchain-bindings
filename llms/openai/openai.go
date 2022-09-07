@@ -133,4 +133,6 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		openai.maxRetries = *input.MaxRetries
 	}
 
-	httpClient := openai_shared.OpenAIAuthenticatedClient(
+	httpClient := openai_shared.OpenAIAuthenticatedClient(apiKey)
+
+	if op

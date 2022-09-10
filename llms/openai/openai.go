@@ -139,4 +139,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 		httpClient.Timeout = *openai.timeout
 	}
 
-	client := gpt.New(gpt.WithClient
+	client := gpt.New(gpt.WithClient(&httpClient))
+	openai.c

@@ -142,4 +142,7 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	client := gpt.New(gpt.WithClient(&httpClient))
 	openai.client = client
 
-	return &openai,
+	return &openai, nil
+}
+
+func (openai *

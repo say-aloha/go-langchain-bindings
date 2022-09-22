@@ -145,4 +145,4 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 	return &openai, nil
 }
 
-func (openai *
+func (openai *OpenAI) Name() 

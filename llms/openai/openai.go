@@ -146,4 +146,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 }
 
 func (openai *OpenAI) Name() string {
-	retu
+	return "openai"
+}

@@ -148,3 +148,5 @@ func New(args ...OpenAIInput) (*OpenAI, error) {
 func (openai *OpenAI) Name() string {
 	return "openai"
 }
+
+func (openai *OpenA

@@ -149,4 +149,4 @@ func (openai *OpenAI) Name() string {
 	return "openai"
 }
 
-func (openai *OpenA
+func (openai *OpenAI) Call(ctx context.C

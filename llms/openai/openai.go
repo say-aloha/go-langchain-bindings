@@ -149,4 +149,4 @@ func (openai *OpenAI) Name() string {
 	return "openai"
 }
 
-func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) 
+func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (string, error)

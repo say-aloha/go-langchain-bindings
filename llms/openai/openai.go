@@ -149,4 +149,5 @@ func (openai *OpenAI) Name() string {
 	return "openai"
 }
 
-func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (string, error)
+func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (string, error) {
+	generations

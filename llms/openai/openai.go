@@ -150,4 +150,4 @@ func (openai *OpenAI) Name() string {
 }
 
 func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (string, error) {
-	generations
+	generations, err := openai.Ge

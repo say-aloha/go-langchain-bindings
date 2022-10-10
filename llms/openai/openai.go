@@ -154,3 +154,5 @@ func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (s
 	if err != nil {
 		return "", err
 	}
+
+	return genera

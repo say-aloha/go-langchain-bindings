@@ -152,4 +152,5 @@ func (openai *OpenAI) Name() string {
 func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (string, error) {
 	generations, err := openai.Generate(ctx, []string{prompt}, stop)
 	if err != nil {
-		
+		return "", err
+	}

@@ -155,4 +155,4 @@ func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (s
 		return "", err
 	}
 
-	return genera
+	return generations.Generations[0][

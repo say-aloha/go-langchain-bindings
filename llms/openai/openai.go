@@ -158,4 +158,4 @@ func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (s
 	return generations.Generations[0][0].Text, nil
 }
 
-func (openai *OpenAI) Generate(ctx context.Co
+func (openai *OpenAI) Generate(ctx context.Context, prompts 

@@ -159,4 +159,4 @@ func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (s
 }
 
 func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []string) (*llms.LLMResult, error) {
-	subPrompts := l
+	subPrompts := llms_shared.BatchSl

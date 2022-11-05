@@ -159,4 +159,5 @@ func (openai *OpenAI) Call(ctx context.Context, prompt string, stop []string) (s
 }
 
 func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []string) (*llms.LLMResult, error) {
-	subPrompts := llms_shared.BatchSlice[string](prompts, openai.batchSi
+	subPrompts := llms_shared.BatchSlice[string](prompts, openai.batchSize)
+	maxToken

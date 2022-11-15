@@ -162,4 +162,6 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	subPrompts := llms_shared.BatchSlice[string](prompts, openai.batchSize)
 	maxTokens := openai.maxTokens
 	var completionTokens, promptTokens, totalTokens int64
-	var choices []shared.CreateCompletionRespo
+	var choices []shared.CreateCompletionResponseChoices
+
+	if ope

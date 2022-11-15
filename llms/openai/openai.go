@@ -164,4 +164,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	var completionTokens, promptTokens, totalTokens int64
 	var choices []shared.CreateCompletionResponseChoices
 
-	if ope
+	if openai.maxToke

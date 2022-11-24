@@ -166,4 +166,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 
 	if openai.maxTokens == -1 {
 		if len(prompts) != 1 {
-			return nil, err
+			return nil, errors.New("max_to

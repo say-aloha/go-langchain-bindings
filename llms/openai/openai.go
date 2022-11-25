@@ -166,4 +166,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 
 	if openai.maxTokens == -1 {
 		if len(prompts) != 1 {
-			return nil, errors.New("max_tokens set to -1 n
+			return nil, errors.New("max_tokens set to -1 not supported for 

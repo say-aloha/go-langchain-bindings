@@ -169,4 +169,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 			return nil, errors.New("max_tokens set to -1 not supported for multiple inputs")
 		}
 
-		maxTokens = llms_sh
+		maxTokens = llms_shared.CalculateMaxTo

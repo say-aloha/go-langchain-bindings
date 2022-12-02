@@ -170,4 +170,6 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 		}
 
 		maxTokens = llms_shared.CalculateMaxTokens(prompts[0], openai.modelName)
-	
+	}
+
+	if len(s

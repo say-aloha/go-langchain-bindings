@@ -173,4 +173,7 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	}
 
 	if len(stop) == 0 {
-		stop = opena
+		stop = openai.stop
+	}
+
+	for _

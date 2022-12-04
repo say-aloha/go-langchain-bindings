@@ -177,4 +177,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	}
 
 	for _, prompts := range subPrompts {
-		data, err := open
+		data, err := openai.completionWith

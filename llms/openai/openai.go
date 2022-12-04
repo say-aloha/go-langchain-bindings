@@ -176,4 +176,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 		stop = openai.stop
 	}
 
-	for _
+	for _, prompts := range

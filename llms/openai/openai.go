@@ -182,4 +182,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 			return nil, err
 		}
 
-		cho
+		choices = append

@@ -179,4 +179,7 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	for _, prompts := range subPrompts {
 		data, err := openai.completionWithRetry(ctx, prompts, maxTokens, stop)
 		if err != nil {
-			return ni
+			return nil, err
+		}
+
+		cho

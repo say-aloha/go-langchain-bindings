@@ -182,4 +182,5 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 			return nil, err
 		}
 
-		choices = append(choices, data.Choic
+		choices = append(choices, data.Choices...)
+		if data.Usage

@@ -184,4 +184,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 
 		choices = append(choices, data.Choices...)
 		if data.Usage != nil {
-			completionTokens += data.
+			completionTokens += data.Usage.CompletionTo

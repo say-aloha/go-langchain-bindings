@@ -187,4 +187,6 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 			completionTokens += data.Usage.CompletionTokens
 			promptTokens += data.Usage.PromptTokens
 			totalTokens += data.Usage.TotalTokens
-		
+		}
+	}
+	var generatio

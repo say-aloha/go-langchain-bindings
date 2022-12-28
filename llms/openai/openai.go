@@ -190,4 +190,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 		}
 	}
 	var generations [][]llms.Generation
-	batchedCho
+	batchedChoices := llms_shared

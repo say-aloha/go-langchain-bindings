@@ -189,4 +189,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 			totalTokens += data.Usage.TotalTokens
 		}
 	}
-	var generatio
+	var generations [][]llms.Gene

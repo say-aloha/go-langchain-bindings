@@ -193,4 +193,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	batchedChoices := llms_shared.BatchSlice[shared.CreateCompletionResponseChoices](choices, openai.n)
 	for _, batch := range batchedChoices {
 		var generationBatch []llms.Generation
-		for _, cho
+		for _, choice := range batc

@@ -195,4 +195,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 		var generationBatch []llms.Generation
 		for _, choice := range batch {
 			generationBatch = append(generationBatch, llms.Generation{
-				Text
+				Text: *choice.Tex

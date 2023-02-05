@@ -197,4 +197,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 			generationBatch = append(generationBatch, llms.Generation{
 				Text: *choice.Text,
 				GenerationInfo: map[string]interface{}{
-					"finishReason": c
+					"finishReason": choice.FinishR

@@ -198,4 +198,6 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 				Text: *choice.Text,
 				GenerationInfo: map[string]interface{}{
 					"finishReason": choice.FinishReason,
-					"logprobs":     choice.Logpro
+					"logprobs":     choice.Logprobs,
+				},
+			})

@@ -201,3 +201,5 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 					"logprobs":     choice.Logprobs,
 				},
 			})
+		}
+		generations

@@ -202,4 +202,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 				},
 			})
 		}
-		generations = append(generations, 
+		generations = append(generations, generationBatch

@@ -205,4 +205,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 		generations = append(generations, generationBatch)
 	}
 
-	return
+	return &llms.LLMResult{

@@ -206,3 +206,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	}
 
 	return &llms.LLMResult{
+		Generations: generat

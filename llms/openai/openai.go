@@ -208,4 +208,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	return &llms.LLMResult{
 		Generations: generations,
 		LLMOutput: map[string]interface{}{
-			"comp
+			"completionTokens": com

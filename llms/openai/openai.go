@@ -211,4 +211,8 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 			"completionTokens": completionTokens,
 			"promptTokens":     promptTokens,
 			"totalTokens":      totalTokens,
-		}
+		},
+	}, nil
+}
+
+func 

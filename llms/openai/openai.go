@@ -210,4 +210,5 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 		LLMOutput: map[string]interface{}{
 			"completionTokens": completionTokens,
 			"promptTokens":     promptTokens,
-			"totalTokens":    
+			"totalTokens":      totalTokens,
+		}

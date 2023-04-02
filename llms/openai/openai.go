@@ -215,4 +215,4 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	}, nil
 }
 
-func (openai *OpenAI) c
+func (openai *OpenAI) completionWithRetry(ctx

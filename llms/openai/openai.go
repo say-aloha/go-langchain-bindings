@@ -215,4 +215,5 @@ func (openai *OpenAI) Generate(ctx context.Context, prompts []string, stop []str
 	}, nil
 }
 
-func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string, maxTokens int64, stop []string) (*shared.CreateCompletionRespon
+func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string, maxTokens int64, stop []string) (*shared.CreateCompletionResponse, error) {
+	promptReq

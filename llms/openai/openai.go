@@ -219,4 +219,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	promptRequest := shared.CreateCreateCompletionRequestPromptArrayOfstr(prompts)
 	request := shared.CreateCompletionRequest{
 		Model:            openai.modelName,
-		Pr
+		Prompt:      

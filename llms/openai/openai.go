@@ -220,4 +220,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	request := shared.CreateCompletionRequest{
 		Model:            openai.modelName,
 		Prompt:           &promptRequest,
-		
+		MaxTokens:     

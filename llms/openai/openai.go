@@ -224,4 +224,5 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		Temperature:      &openai.temperature,
 		TopP:             &openai.topP,
 		N:                &openai.n,
-		BestOf:           &open
+		BestOf:           &openai.bestOf,
+		LogitBia

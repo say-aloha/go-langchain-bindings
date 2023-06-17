@@ -225,4 +225,5 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		TopP:             &openai.topP,
 		N:                &openai.n,
 		BestOf:           &openai.bestOf,
-		LogitBias:        openai.l
+		LogitBias:        openai.logitBias,
+		Prese

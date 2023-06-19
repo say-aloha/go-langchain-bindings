@@ -229,4 +229,5 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		PresencePenalty:  &openai.presencePenalty,
 		FrequencyPenalty: &openai.frequencyPenalty,
 	}
-	if len(stop)
+	if len(stop) != 0 {
+		stopReques

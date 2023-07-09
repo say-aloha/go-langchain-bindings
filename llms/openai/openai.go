@@ -230,4 +230,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		FrequencyPenalty: &openai.frequencyPenalty,
 	}
 	if len(stop) != 0 {
-		stopRequest := shared.CreateCreateCompletionRequest
+		stopRequest := shared.CreateCreateCompletionRequestStopArrayOfstr(s

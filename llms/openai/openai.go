@@ -231,4 +231,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	}
 	if len(stop) != 0 {
 		stopRequest := shared.CreateCreateCompletionRequestStopArrayOfstr(stop)
-		request.
+		request.Stop = &stop

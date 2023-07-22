@@ -234,4 +234,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		request.Stop = &stopRequest
 	}
 
-	var finalResult *shared.Crea
+	var finalResult *shared.CreateCompletionRespon

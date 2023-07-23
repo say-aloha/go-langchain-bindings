@@ -235,4 +235,6 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	}
 
 	var finalResult *shared.CreateCompletionResponse
-	var finalE
+	var finalErr error
+
+	// 

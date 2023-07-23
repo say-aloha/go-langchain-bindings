@@ -237,4 +237,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	var finalResult *shared.CreateCompletionResponse
 	var finalErr error
 
-	// 
+	// wait 2^x second bet

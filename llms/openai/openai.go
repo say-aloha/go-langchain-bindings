@@ -238,4 +238,5 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	var finalErr error
 
 	// wait 2^x second between each retry starting with
-	/
+	// max 10 seconds
+	

@@ -241,4 +241,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	// max 10 seconds
 	for i := 0; i < openai.maxRetries; i++ {
 		lastTry := i == openai.maxRetries-1
-		sleep := i
+		sleep := int(math.Min(mat

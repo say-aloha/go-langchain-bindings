@@ -242,4 +242,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 	for i := 0; i < openai.maxRetries; i++ {
 		lastTry := i == openai.maxRetries-1
 		sleep := int(math.Min(math.Pow(2, float64(i)), float64(10)))
-		res, err := openai.client.Ope
+		res, err := openai.client.OpenAI.CreateComple

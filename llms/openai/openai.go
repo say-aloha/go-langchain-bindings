@@ -244,4 +244,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		sleep := int(math.Min(math.Pow(2, float64(i)), float64(10)))
 		res, err := openai.client.OpenAI.CreateCompletion(ctx, request)
 		if err != nil {
-			
+			var netErr net.

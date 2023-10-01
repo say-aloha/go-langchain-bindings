@@ -246,4 +246,5 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		if err != nil {
 			var netErr net.Error
 			if errors.As(err, &netErr) {
-				// retry on clie
+				// retry on client timeout
+				if n

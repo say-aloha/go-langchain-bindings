@@ -248,4 +248,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 			if errors.As(err, &netErr) {
 				// retry on client timeout
 				if netErr.Timeout() && !lastTry {
-					time.Sleep(tim
+					time.Sleep(time.Duration(sleep

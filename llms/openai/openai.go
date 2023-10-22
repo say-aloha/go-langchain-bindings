@@ -250,3 +250,7 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 				if netErr.Timeout() && !lastTry {
 					time.Sleep(time.Duration(sleep) * time.Second)
 					continue
+				}
+			}
+
+		

@@ -256,4 +256,5 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 			return nil, err
 		}
 
-		if res.StatusCode == http.Statu
+		if res.StatusCode == http.StatusOK {
+			finalRes

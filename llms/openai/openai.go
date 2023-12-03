@@ -262,4 +262,6 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		} else {
 			openAIError := openai_shared.CreateOpenAIError(res.StatusCode, res.RawResponse.Status)
 			if lastTry || !openAIError.IsRetryable() {
-				finalErr 
+				finalErr = openAIError
+				break
+	

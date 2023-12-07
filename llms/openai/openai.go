@@ -267,4 +267,4 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 			}
 		}
 
-		time.Sleep(time.Durati
+		time.Sleep(time.Duration(sleep) * time.

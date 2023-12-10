@@ -270,4 +270,5 @@ func (openai *OpenAI) completionWithRetry(ctx context.Context, prompts []string,
 		time.Sleep(time.Duration(sleep) * time.Second)
 	}
 
-	return finalResult, final
+	return finalResult, finalErr
+}

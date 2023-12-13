@@ -12,3 +12,18 @@ type OpenAIInput struct {
 	BatchSize *int64
 	// List of stop words to use when generating
 	Stop []string
+	// Timeout to use when making a http request to OpenAI
+	Timeout *time.Duration
+	// Number of retry attempts for a single request to OpenAI
+	MaxRetries *int
+	// OpenAI API Key
+	OpenAIApiKey *string
+	ModelParams
+}
+
+type ModelParams struct {
+	// Sampling temperature to use
+	Temperature *float64
+	// Maximum number of tokens to generate in the completion. -1 returns as many
+	// tokens as possible given the prompt and the model's maximum context size.
+	MaxTokens *int64

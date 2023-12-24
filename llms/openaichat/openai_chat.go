@@ -67,3 +67,24 @@ func New(args ...OpenAIChatInput) (*OpenAIChat, error) {
 		modelKwargs:      input.ModelKwargs,
 		stop:             input.Stop,
 		timeout:          input.Timeout,
+		maxRetries:       maxRetries,
+		prefixMessages:   input.PrefixMessages,
+	}
+
+	apiKey := os.Getenv("OPENAI_API_KEY")
+
+	if input.OpenAIApiKey != nil {
+		apiKey = *input.OpenAIApiKey
+	}
+
+	if apiKey == "" {
+		return nil, errors.New("OpenAI API key not found")
+	}
+
+	if input.Temperature != nil {
+		openai.temperature = *input.Temperature
+	}
+
+	if input.MaxTokens != nil {
+		openai.maxTokens = *input.MaxTokens
+	}

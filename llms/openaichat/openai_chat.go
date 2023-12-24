@@ -47,3 +47,23 @@ type OpenAIChat struct {
 
 func New(args ...OpenAIChatInput) (*OpenAIChat, error) {
 	if len(args) > 1 {
+		return nil, errors.New("more than one config argument not supported")
+	}
+
+	input := OpenAIChatInput{}
+	if len(args) > 0 {
+		input = args[0]
+	}
+
+	openai := OpenAIChat{
+		temperature:      temperature,
+		topP:             topP,
+		frequencyPenalty: frequencyPenalty,
+		presencePenalty:  presencePenalty,
+		n:                n,
+		logitBias:        input.LogitBias,
+		streaming:        input.Streaming,
+		modelName:        modelName,
+		modelKwargs:      input.ModelKwargs,
+		stop:             input.Stop,
+		timeout:          input.Timeout,

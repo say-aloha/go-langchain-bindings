@@ -29,3 +29,21 @@ const (
 
 type OpenAIChat struct {
 	temperature      float64
+	maxTokens        int64
+	topP             float64
+	frequencyPenalty float64
+	presencePenalty  float64
+	n                int64
+	logitBias        map[string]interface{}
+	streaming        bool // Streaming Unsupported Right Now
+	modelName        string
+	modelKwargs      map[string]interface{}
+	maxRetries       int
+	stop             []string
+	prefixMessages   []ChatMessage
+	timeout          *time.Duration
+	client           *gpt.Gpt
+}
+
+func New(args ...OpenAIChatInput) (*OpenAIChat, error) {
+	if len(args) > 1 {

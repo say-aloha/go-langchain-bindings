@@ -88,3 +88,27 @@ func New(args ...OpenAIChatInput) (*OpenAIChat, error) {
 	if input.MaxTokens != nil {
 		openai.maxTokens = *input.MaxTokens
 	}
+
+	if input.TopP != nil {
+		openai.topP = *input.TopP
+	}
+
+	if input.FrequencyPenalty != nil {
+		openai.frequencyPenalty = *input.FrequencyPenalty
+	}
+
+	if input.PresencePenalty != nil {
+		openai.presencePenalty = *input.PresencePenalty
+	}
+
+	if input.N != nil {
+		openai.n = *input.N
+	}
+
+	if input.ModelName != nil {
+		openai.modelName = *input.ModelName
+	}
+
+	if input.MaxRetries != nil {
+		openai.maxRetries = *input.MaxRetries
+	}

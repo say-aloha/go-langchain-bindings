@@ -112,3 +112,22 @@ func New(args ...OpenAIChatInput) (*OpenAIChat, error) {
 	if input.MaxRetries != nil {
 		openai.maxRetries = *input.MaxRetries
 	}
+
+	httpClient := openai_shared.OpenAIAuthenticatedClient(apiKey)
+
+	if openai.timeout != nil {
+		httpClient.Timeout = *openai.timeout
+	}
+
+	client := gpt.New(gpt.WithClient(&httpClient))
+	openai.client = client
+
+	return &openai, nil
+}
+
+func (openai *OpenAIChat) Name() string {
+	return "openai-chat"
+}
+
+func (openai *OpenAIChat) Call(ctx context.Context, prompt string, stop []string) (string, error) {
+	if len(stop) == 0 {

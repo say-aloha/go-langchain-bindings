@@ -166,3 +166,24 @@ func (openai *OpenAIChat) chatCompletionWithRetry(ctx context.Context, prompt st
 	if openai.maxTokens != 0 {
 		request.MaxTokens = &openai.maxTokens
 	}
+
+	if len(stop) != 0 {
+		stopRequest := shared.CreateCreateChatCompletionRequestStopArrayOfstr(stop)
+		request.Stop = &stopRequest
+	}
+
+	var finalResult *shared.CreateChatCompletionResponse
+	var finalErr error
+
+	// wait 2^x second between each retry starting with
+	// max 10 seconds
+	for i := 0; i < openai.maxRetries; i++ {
+		lastTry := i == openai.maxRetries-1
+		sleep := int(math.Min(math.Pow(2, float64(i)), float64(10)))
+		res, err := openai.client.OpenAI.CreateChatCompletion(ctx, request)
+		if err != nil {
+			var netErr net.Error
+			if errors.As(err, &netErr) {
+				// retry on client timeout
+				if netErr.Timeout() && !lastTry {
+					time.Sleep(time.Duration(sleep) * time.Second)

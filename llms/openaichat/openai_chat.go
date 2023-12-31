@@ -151,3 +151,18 @@ func (openai *OpenAIChat) Generate(ctx context.Context, prompts []string, stop [
 	// Not Implemented for OpenAIChat
 	return nil, nil
 }
+
+func (openai *OpenAIChat) chatCompletionWithRetry(ctx context.Context, prompt string, maxTokens int64, stop []string) (*shared.CreateChatCompletionResponse, error) {
+	request := shared.CreateChatCompletionRequest{
+		Model:            openai.modelName,
+		Messages:         formatMessages(openai.prefixMessages, prompt),
+		Temperature:      &openai.temperature,
+		TopP:             &openai.topP,
+		N:                &openai.n,
+		LogitBias:        openai.logitBias,
+		PresencePenalty:  &openai.presencePenalty,
+		FrequencyPenalty: &openai.frequencyPenalty,
+	}
+	if openai.maxTokens != 0 {
+		request.MaxTokens = &openai.maxTokens
+	}

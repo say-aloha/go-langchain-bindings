@@ -131,3 +131,23 @@ func (openai *OpenAIChat) Name() string {
 
 func (openai *OpenAIChat) Call(ctx context.Context, prompt string, stop []string) (string, error) {
 	if len(stop) == 0 {
+		stop = openai.stop
+	}
+
+	data, err := openai.chatCompletionWithRetry(ctx, prompt, openai.maxTokens, stop)
+	if err != nil {
+		return "", err
+	}
+
+	message := ""
+	if len(data.Choices) > 0 && data.Choices[0].Message != nil {
+		message = data.Choices[0].Message.Content
+	}
+
+	return message, nil
+}
+
+func (openai *OpenAIChat) Generate(ctx context.Context, prompts []string, stop []string) (*llms.LLMResult, error) {
+	// Not Implemented for OpenAIChat
+	return nil, nil
+}

@@ -187,3 +187,20 @@ func (openai *OpenAIChat) chatCompletionWithRetry(ctx context.Context, prompt st
 				// retry on client timeout
 				if netErr.Timeout() && !lastTry {
 					time.Sleep(time.Duration(sleep) * time.Second)
+					continue
+				}
+			}
+
+			return nil, err
+		}
+
+		if res.StatusCode == http.StatusOK {
+			finalResult = res.CreateChatCompletionResponse
+			break
+		} else {
+			openAIError := openai_shared.CreateOpenAIError(res.StatusCode, res.RawResponse.Status)
+			if lastTry || !openAIError.IsRetryable() {
+				finalErr = openAIError
+				break
+			}
+		}

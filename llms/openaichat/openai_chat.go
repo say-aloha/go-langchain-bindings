@@ -204,3 +204,21 @@ func (openai *OpenAIChat) chatCompletionWithRetry(ctx context.Context, prompt st
 				break
 			}
 		}
+
+		time.Sleep(time.Duration(sleep) * time.Second)
+	}
+
+	return finalResult, finalErr
+}
+
+func formatMessages(previous []ChatMessage, message string) []shared.ChatCompletionRequestMessage {
+	var result []shared.ChatCompletionRequestMessage
+	for _, message := range previous {
+		result = append(result, shared.ChatCompletionRequestMessage{
+			Content: message.Content,
+			Role:    convertRoleEnum(message.Role),
+		})
+	}
+	result = append(result, shared.ChatCompletionRequestMessage{
+		Content: message,
+		Role:    shared.ChatCompletionRequestMessageRoleEnumUser,

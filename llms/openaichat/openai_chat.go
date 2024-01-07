@@ -222,3 +222,19 @@ func formatMessages(previous []ChatMessage, message string) []shared.ChatComplet
 	result = append(result, shared.ChatCompletionRequestMessage{
 		Content: message,
 		Role:    shared.ChatCompletionRequestMessageRoleEnumUser,
+	})
+	return result
+}
+
+func convertRoleEnum(enum ChatMessageRoleEnum) shared.ChatCompletionRequestMessageRoleEnum {
+	switch enum {
+	case ChatMessageRoleEnumSystem:
+		return shared.ChatCompletionRequestMessageRoleEnumSystem
+	case ChatMessageRoleEnumUser:
+		return shared.ChatCompletionRequestMessageRoleEnumUser
+	case ChatMessageRoleEnumAssistant:
+		return shared.ChatCompletionRequestMessageRoleEnumAssistant
+	default:
+		return ""
+	}
+}

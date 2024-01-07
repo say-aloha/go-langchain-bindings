@@ -16,3 +16,11 @@ type ChatMessage struct {
 	Content string
 	Role    ChatMessageRoleEnum
 }
+
+type ChatMessageRoleEnum string
+
+const (
+	ChatMessageRoleEnumSystem    ChatMessageRoleEnum = "system"
+	ChatMessageRoleEnumUser      ChatMessageRoleEnum = "user"
+	ChatMessageRoleEnumAssistant ChatMessageRoleEnum = "assistant"
+)

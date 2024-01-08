@@ -1,1 +1,5 @@
-package opena
+package openai
+
+import (
+	"fmt"
+	"ne

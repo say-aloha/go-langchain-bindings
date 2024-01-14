@@ -2,4 +2,7 @@ package openai
 
 import (
 	"fmt"
-	"ne
+	"net/http"
+)
+
+type Ope

@@ -5,4 +5,4 @@ import (
 	"net/http"
 )
 
-type Ope
+type OpenAIError struct {

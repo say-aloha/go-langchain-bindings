@@ -8,4 +8,4 @@ import (
 type OpenAIError struct {
 	error
 
-	s
+	statusCode int

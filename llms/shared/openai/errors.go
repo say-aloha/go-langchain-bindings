@@ -6,3 +6,6 @@ import (
 )
 
 type OpenAIError struct {
+	error
+
+	s

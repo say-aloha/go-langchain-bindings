@@ -9,4 +9,7 @@ type OpenAIError struct {
 	error
 
 	statusCode int
-	status     strin
+	status     string
+}
+
+func (e *OpenAIEr

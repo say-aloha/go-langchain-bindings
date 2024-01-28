@@ -9,3 +9,4 @@ type OpenAIError struct {
 	error
 
 	statusCode int
+	status     strin

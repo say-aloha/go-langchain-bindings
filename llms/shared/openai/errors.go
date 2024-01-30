@@ -12,4 +12,4 @@ type OpenAIError struct {
 	status     string
 }
 
-func (e *OpenAIEr
+func (e *OpenAIError) Error() st

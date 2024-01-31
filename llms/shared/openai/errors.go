@@ -13,4 +13,4 @@ type OpenAIError struct {
 }
 
 func (e *OpenAIError) Error() string {
-	return fmt.Sprintf("error in call to o
+	return fmt.Sprintf("error in call to openai with status 

@@ -16,4 +16,5 @@ func (e *OpenAIError) Error() string {
 	return fmt.Sprintf("error in call to openai with status %s", e.status)
 }
 
-func (e *OpenAIError) GetStatusCode(
+func (e *OpenAIError) GetStatusCode() int {
+	return e.st

@@ -17,4 +17,7 @@ func (e *OpenAIError) Error() string {
 }
 
 func (e *OpenAIError) GetStatusCode() int {
-	return e.st
+	return e.statusCode
+}
+
+func

@@ -20,4 +20,4 @@ func (e *OpenAIError) GetStatusCode() int {
 	return e.statusCode
 }
 
-func (e *OpenAIE
+func (e *OpenAIError) IsRetrya

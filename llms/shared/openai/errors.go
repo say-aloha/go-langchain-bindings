@@ -20,4 +20,5 @@ func (e *OpenAIError) GetStatusCode() int {
 	return e.statusCode
 }
 
-func (e *OpenAIError) IsRetrya
+func (e *OpenAIError) IsRetryable() bool {
+	

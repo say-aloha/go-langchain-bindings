@@ -21,4 +21,4 @@ func (e *OpenAIError) GetStatusCode() int {
 }
 
 func (e *OpenAIError) IsRetryable() bool {
-	return e.statusCode == http
+	return e.statusCode == http.StatusTooManyR

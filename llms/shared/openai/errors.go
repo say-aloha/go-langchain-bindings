@@ -25,4 +25,5 @@ func (e *OpenAIError) IsRetryable() bool {
 }
 
 func CreateOpenAIError(statusCode int, status string) *OpenAIError {
-	err
+	err := OpenAIError{
+		s

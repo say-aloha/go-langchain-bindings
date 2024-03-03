@@ -28,4 +28,6 @@ func CreateOpenAIError(statusCode int, status string) *OpenAIError {
 	err := OpenAIError{
 		statusCode: statusCode,
 		status:     status,
-	
+	}
+
+	return &err

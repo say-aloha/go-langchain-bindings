@@ -1,4 +1,5 @@
 package llms
 
 type LLMResult struct {
-	G
+	Generations [][]Generation
+	L

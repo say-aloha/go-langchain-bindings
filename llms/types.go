@@ -1,3 +1,4 @@
 package llms
 
-type LLMRes
+type LLMResult struct {
+	G

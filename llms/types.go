@@ -1,1 +1,3 @@
-pack
+package llms
+
+type LLMRes

@@ -5,4 +5,5 @@ type LLMResult struct {
 	LLMOutput   map[string]interface{}
 }
 
-type Generation s
+type Generation struct {
+	Text   

@@ -7,4 +7,4 @@ type LLMResult struct {
 
 type Generation struct {
 	Text           string
-	Gene
+	GenerationInfo map[st

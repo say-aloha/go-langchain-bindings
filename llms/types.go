@@ -6,4 +6,5 @@ type LLMResult struct {
 }
 
 type Generation struct {
-	Text   
+	Text           string
+	Gene

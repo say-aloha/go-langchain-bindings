@@ -7,4 +7,5 @@ type LLMResult struct {
 
 type Generation struct {
 	Text           string
-	GenerationInfo map[string]interface
+	GenerationInfo map[string]interface{}
+}
